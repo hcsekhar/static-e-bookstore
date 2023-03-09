@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 .topnav {
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 20px;
-    background-color: rgb(255, 136, 0);
+    background-color: rgb(255, 150, 30);
     overflow: hidden;
 }
 
@@ -21,25 +25,14 @@
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(230, 230, 230);
     color: black;
 }
 
 .topnav a.active {
     border-radius: 20px;
-    background-color: #04AA6D;
-    color: white;
-}
-
-hr {
-    display: ruby-base;
-    margin-top: 0.5px;
-    margin-bottom: 0.5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-style: inset;
-    border-width: 2px;
-    background-color: orange;
+    background-color: rgb(230, 230, 230);
+    color: black;
 }
 
 .index {
@@ -69,6 +62,26 @@ hr {
     border-radius: 20px;
 }
 
+hr {
+    margin: 20px;
+    border-width: 2px;
+}
+
+.my-1 {
+    margin: 8px 0;
+}
+
+.my-2 {
+    margin: 26px 0;
+}
+
+.container {
+    min-height: calc(60vh - 58px - 12vh);
+    margin-top: 20px;
+    background-color: rgba(255, 189, 66, 0.562);
+    border-radius: 20px;
+    overflow: visible;
+}
 
 .how a {
     float: left;
@@ -86,18 +99,10 @@ hr {
     color: black;
 }
 
-
-.slider {
-    width: 90vw;
-    margin: 12px auto;
-    overflow: auto;
-
-}
-
 .card {
     max-width: 91vw;
     margin: 37px auto;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -108,46 +113,16 @@ hr {
 }
 
 .card-item {
-    display: flexbox;
+    display: inline-flexbox;
     justify-content: center;
     flex-direction: row;
     margin: 0 20px;
 }
 
 .card h2 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-    min-height: calc(60vh - 58px - 12vh);
-    margin-top: 20px;
-    background-color: rgba(255, 197, 89, 0.562);
-    border-radius: 20px;
-    overflow: visible;
-}
-
-.flex-all-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn {
-    padding: 5px 10px;
-    color: white;
-    background: var(--main-bg-color);
-    border: 2px solid white;
-    border-radius: 7px;
-    cursor: pointer;
-}
-
-.my-1 {
-    margin: 8px 0;
-}
-
-.my-2 {
-    margin: 26px 0;
-}
 
 .text-center {
     text-align: center;
@@ -161,7 +136,7 @@ hr {
     border: 8px;
     border-style: double;
     border-radius: 20px;
-    box-shadow: 0px 0px 30px #d3d3d3;
+    box-shadow: 0px 0px 30px #f1e1ab;
     overflow: visible;
 }
 
@@ -173,13 +148,6 @@ hr {
     color: red;
 }
 
-.goto {
-    margin-right: auto;
-    justify-content: right;
-    background-color: #ffbb00;
-    box-shadow: 0px 0px 30px #ffd45e;
-}
-
 
 footer {
     justify-content: center;
@@ -188,5 +156,6 @@ footer {
     border-radius: 20px;
     background-color: orange;
     color: white;
-    font-family: 'Lato', sans-serif;
+    border: 8px;
+    border-style: double;
 }
